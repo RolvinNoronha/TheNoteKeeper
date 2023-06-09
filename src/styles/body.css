@@ -19,9 +19,28 @@
     background-color: var(--color_secondary);
 }
 
+.add__button {
+    background-color: var(--color_primary);
+    border: 1px solid grey;
+    border-radius: 10px;
+    color: var(--font_color);
+    padding: 1rem 1.4rem;
+    margin: 1.2rem;
+    font-family: inherit;
+    font-size: 1.4rem;
+}
+
+.add__button:focus {
+    outline: none;
+}
+
+.add__button:hover {
+    cursor: pointer;
+}
+
 .modal {
     position: fixed;
-    z-index: 1; /* Sit on top */
+    z-index: 1; 
     top: 0;
     left: 0;
     height: 100%;
@@ -33,15 +52,30 @@
 .modal__content {
     background-color: #fefefe;
     margin: 15% auto; 
+    padding: 2rem;
     border: 1px solid #888;
+    border-radius: 20px;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: modalPopUp 0.2s ease-out;
 }
 
-.modal__close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+@keyframes modalPopUp {
+   0% {
+    transform: scale(0.3);
+   } 
+
+   50% {
+    transform: scale(0.6);
+   }
+
+   100% {
+    transform: scale(1);
+   }
+
 }
 
 .modal__close:hover,
@@ -50,3 +84,29 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.modal__buttons {
+    padding: 1rem;
+    display: flex;
+}
+
+.modal__content > label {
+    font-size: 1.6rem;
+}
+
+.modal__input {
+    font-family: inherit;
+    color: inherit;
+    background-color: var(--font_color);
+    border: none;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    padding: 1.2rem 2rem;
+    min-width: 90%;
+    transition: all 0.4s;
+}
+
+.modal__input:focus {
+    outline: none;
+}
+
