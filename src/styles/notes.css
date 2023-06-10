@@ -1,3 +1,49 @@
 
 
+.notes {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 5rem;
+}
 
+
+.note {
+    width: 30rem;
+    margin: 1.4rem 1.8rem;
+    padding: 1.4rem;
+    border: 1px solid;
+    max-height: 25rem;
+    border-radius: 20px;
+}
+
+
+.note__title {
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.note__content {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.note__date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.note__date p {
+    font-size: 1.2rem;
+}
+
+.note__modal-content {
+    margin: 1rem 2rem;
+    max-height: 20rem;
+    overflow: scroll;
+}
