@@ -61,6 +61,7 @@
     justify-content: center;
     align-items: center;
     animation: modalPopUp 0.2s ease-out;
+    height: 60%;
 }
 
 @keyframes modalPopUp {
@@ -94,6 +95,10 @@
     font-size: 1.6rem;
 }
 
+.modal__content textarea {
+    height: 40%;
+}
+
 .modal__input {
     font-family: inherit;
     color: inherit;
@@ -108,5 +113,21 @@
 
 .modal__input:focus {
     outline: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .modal__content {
+        height: 60%;
+        width: 80%;
+    }
+
+    .modal__content textarea {
+        height: 60%;
+    }
+
+    .modal__input {
+        width: 10rem;
+    }
 }
 

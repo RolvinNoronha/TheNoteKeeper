@@ -47,3 +47,23 @@
     max-height: 20rem;
     overflow: scroll;
 }
+
+ 
+@media only screen and (max-width: 1200px) {
+    .notes { 
+        margin: 1rem 8rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .notes {
+        margin: 1rem 6rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .notes {
+        justify-content: center;
+        margin: 1rem auto;
+    }
+}

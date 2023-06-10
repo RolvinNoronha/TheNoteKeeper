@@ -10,7 +10,7 @@
     --color_tertiary: #F1F6F9;
 }
 
-*,
+*, 
 *::after,
 *::before {
     margin: 0;
@@ -21,4 +21,11 @@
 html {
     font-size: 62.5%;   
     font-family: "Poppins", sans-serif;
+
+}
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 50%;
+    }
 }

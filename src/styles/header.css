@@ -58,3 +58,37 @@
     cursor: pointer;
     background-color: var(--font_color);
 }
+
+
+@media only screen and (max-width: 1200px) {
+    .header__button {
+        padding: 1rem;
+        margin: 1.2rem;
+        width: 14%;
+    } 
+}
+
+@media only screen and (max-width: 800px) {
+    .header__button {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .header {
+        height: 20rem;
+        flex-wrap: wrap;
+    }
+
+    .header__search {
+        order: 3;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+
+    .header__button {
+        width: 40%;
+    }
+}
