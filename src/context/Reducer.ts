@@ -55,7 +55,7 @@ const queryReducer = (state : Query, action: any) => {
         case "SEARCH_QUERY":
             return { ...state, search: action.payload };
         case "RESET":
-            return { sort: "", search: ""}
+            return { ...state, sort: "", search: ""}
         default: 
             return state;
     }

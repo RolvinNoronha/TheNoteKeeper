@@ -42,10 +42,7 @@ const Notes = () => {
                 className="sort__button"
                 onClick={() => queryDispatch({ type: "SORT_NOTES", payload: "title"})}
             >Sort By Title</button>
-            <button 
-                className="sort__button"
-                onClick={() => queryDispatch({ type: "RESET", payload: null })}
-            >Reset</button>
+            
             {
                 isOpen && title === "" ? <Modal /> : null
             }
