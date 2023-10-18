@@ -12,12 +12,16 @@ const Note = ({ note } : Notetype) => {
     const { notesDispatch } = useContext(KeepNotesContext);
     const { modalDispatch } = useContext(KeepNotesContext) 
 
+    let text = "";
+
+    
+
     return (
         <div className="note">
             <h1 
                 onClick={() => modalDispatch({ type: "NOTE_MODAL", payload: {title: note.title, content: note.content }})}
                 className="note__title"
-            >{note.title}</h1>
+            >{note.title.substring(0, 12) + (note.title.length > 12 ? "..." : "")}</h1>
             <p className="note__content">{note.content.substring(0, 100) + "..."}</p>
             <div className="note__date">
                 <p>{note.date}</p>
@@ -31,3 +35,4 @@ const Note = ({ note } : Notetype) => {
 }
 
 export default Note
+

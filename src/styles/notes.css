@@ -1,4 +1,6 @@
-
+p {
+    word-wrap: break-word;
+}
 
 .notes {
     display: flex;
